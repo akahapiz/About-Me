@@ -239,8 +239,8 @@ padding:40px;
 margin-bottom:70px;
 backdrop-filter:blur(15px);
 position:relative;
-overflow:hidden;
-transition:0.5s;
+overflow:visible;
+transition:1s;
 box-shadow:0 10px 40px rgba(0,0,0,0.4);
 opacity:0;
 transform:translateY(100px);
@@ -263,6 +263,8 @@ inset:0;
 background:linear-gradient(135deg,rgba(168,85,247,0.12),rgba(59,130,246,0.05));
 opacity:0;
 transition:0.5s;
+pointer-events:none;
+border-radius:30px;
 }
 
 .card:hover::before{
@@ -324,6 +326,8 @@ color:#f3e8ff;
 /* TRAILER */
 
 .trailer-container{
+position:relative;
+z-index:20;
 margin-top:30px;
 }
 
@@ -353,6 +357,10 @@ border-radius:25px;
 margin-top:10px;
 transition:0.5s;
 box-shadow:0 0 35px rgba(59,130,246,0.4);
+position:relative;
+z-index:50;
+pointer-events:auto;
+background:black;
 }
 
 iframe:hover{
@@ -468,7 +476,7 @@ display:none;
 <body>
 
 <div class="loader" id="loader">
-<h1>Loading MovieVerse...</h1>
+<h1>Loading AKAH`s MovieVerse...</h1>
 </div>
 
 <div class="particles"></div>
@@ -478,7 +486,7 @@ display:none;
 <nav>
 
 <div class="logo magic">
-MovieVerse
+AKAH`s MovieVerse
 </div>
 
 <div class="nav-links">
@@ -497,7 +505,7 @@ Explore The World Of
 </h1>
 
 <p>
-Selamat datang di AKAH`s MovieVerse, website cinematic modern yang membahas film dan serial populer dengan tampilan futuristik, animasi premium, dan pengalaman visual layaknya platform streaming profesional.
+Selamat datang di AKAH`s MovieVerse, website cinematic modern yang membahas film dan serial populer dengan tampilan futuristik, efek neon, animasi premium, dan pengalaman visual layaknya platform streaming profesional.
 </p>
 
 <p>
@@ -544,7 +552,7 @@ Genre: Fantasy • Adventure • Magic • Drama
 
 <p>Sepanjang seri, Harry terus menghadapi Voldemort yang perlahan bangkit kembali untuk menguasai dunia sihir. Ia menemukan banyak rahasia tentang masa lalunya, termasuk hubungan dirinya dengan Voldemort.</p>
 
-<p>Setiap film memperlihatkan perkembangan karakter yang makin dewasa dan suasana yang makin gelap. Tahun awal fokus pada petualangan sekolah sihir, film tengah mulai memperlihatkan perang dan pengkhianatan, dan film akhir berpusat pada perburuan Horcrux, benda yang menyimpan bagian jiwa Voldemort.</p>
+<p>Setiap film memperlihatkan perkembangan karakter yang makin dewasa dan suasana yang makin gelap. Tahun awal fokus pada petualangan sekolah sihir. Film tengah mulai memperlihatkan perang dan pengkhianatan. Film akhir berpusat pada perburuan Horcrux, benda yang menyimpan bagian jiwa Voldemort.</p>
 
 <p>Pada akhirnya terjadi perang besar di Hogwarts antara pasukan Voldemort dan para penyihir yang melindungi sekolah. Harry akhirnya berhasil mengalahkan Voldemort setelah memahami pengorbanan, persahabatan, dan takdirnya sendiri.</p>
 
@@ -554,13 +562,17 @@ Genre: Fantasy • Adventure • Magic • Drama
 
 <h3>Review IMDb</h3>
 
+<p>Rating IMDb film pertama Harry Potter and the Sorcerer's Stone: 7.7/10 dari sekitar 949 ribu user.</p>
+
 <p>Yang paling dipuji adalah dunia sihir Hogwarts yang sangat imajinatif dan memorable. Persahabatan Harry, Ron, dan Hermione menjadi daya tarik utama.</p>
 
 <p>Musik, visual, dan atmosfer fantasy dianggap legendaris dan menjadi salah satu alasan kenapa Harry Potter begitu ikonik.</p>
 
 <p>Film-film akhir seperti Deathly Hallows Part 2 sering dianggap yang terbaik karena lebih emosional dan gelap.</p>
 
-<p>Kritik kecil yang muncul adalah beberapa film dianggap terlalu panjang dan ada bagian novel yang dipotong sehingga fans buku merasa kurang puas.</p>
+<p>Beberapa film tengah dianggap terlalu panjang dan ada bagian novel yang dipotong sehingga fans buku merasa kurang puas.</p>
+
+<p>Meski begitu, Harry Potter tetap dianggap salah satu franchise fantasy terbesar sepanjang masa.</p>
 
 </div>
 
@@ -578,7 +590,12 @@ Genre: Fantasy • Adventure • Magic • Drama
 ▶ Watch Harry Potter Trailer
 </a>
 
-<iframe src="https://www.youtube.com/embed/VyHV0BRtdxo?autoplay=0" allowfullscreen></iframe>
+<iframe
+src="https://www.youtube.com/embed/VyHV0BRtdxo"
+title="Harry Potter Trailer"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen>
+</iframe>
 
 </div>
 
@@ -618,11 +635,13 @@ Genre: Mystery • Horror • Supernatural • Dark Comedy • Fantasy
 
 <h3>Review IMDb</h3>
 
+<p>Rating IMDb: 8.0/10 dari sekitar 494 ribu user.</p>
+
 <p>Akting Jenna Ortega sebagai Wednesday dianggap sangat cocok dan ikonik. Nuansa gothic dan misterinya menarik.</p>
 
 <p>Karakter Wednesday terasa dingin, cerdas, dan lucu secara dark comedy.</p>
 
-<p>Beberapa orang merasa plot misterinya agak mudah ditebak dan unsur sekolahnya terlalu mirip serial remaja lain.</p>
+<p>Beberapa orang merasa plot misterinya agak mudah ditebak dan ada yang bilang unsur sekolahnya terlalu mirip serial remaja lain.</p>
 
 <p>Secara umum, IMDb menunjukkan kalau serial ini sangat populer terutama di kalangan remaja dan fans misteri fantasy.</p>
 
@@ -642,7 +661,12 @@ Genre: Mystery • Horror • Supernatural • Dark Comedy • Fantasy
 ▶ Watch Wednesday Trailer
 </a>
 
-<iframe src="https://www.youtube.com/embed/Di310WS8zLk?autoplay=0" allowfullscreen></iframe>
+<iframe
+src="https://www.youtube.com/embed/Di310WS8zLk"
+title="Wednesday Trailer"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen>
+</iframe>
 
 </div>
 
@@ -682,6 +706,8 @@ Genre: Sci-Fi • Horror • Thriller • Mystery • Adventure
 
 <h3>Review IMDb</h3>
 
+<p>Rating IMDb: 8.6/10 dari sekitar 1,7 juta user.</p>
+
 <p>Hal yang paling dipuji adalah ceritanya yang seru dan penuh misteri. Nuansa tahun 80-an dibuat sangat keren dan nostalgic.</p>
 
 <p>Karakter seperti Eleven, Dustin, Steve, dan Hopper sangat disukai fans.</p>
@@ -689,6 +715,8 @@ Genre: Sci-Fi • Horror • Thriller • Mystery • Adventure
 <p>Monster dan dunia Upside Down dianggap unik. IMDb menunjukkan banyak episode mendapat rating sangat tinggi, terutama episode klimaks musim 4.</p>
 
 <p>Beberapa musim dianggap terlalu panjang dan ada penonton yang merasa jumlah karakter makin kebanyakan.</p>
+
+<p>Walaupun begitu, Stranger Things masih dianggap salah satu serial sci-fi dan horor terbaik dari Netflix.</p>
 
 </div>
 
@@ -706,7 +734,12 @@ Genre: Sci-Fi • Horror • Thriller • Mystery • Adventure
 ▶ Watch Stranger Things Trailer
 </a>
 
-<iframe src="https://www.youtube.com/embed/b9EkMc79ZSU?autoplay=0" allowfullscreen></iframe>
+<iframe
+src="https://www.youtube.com/embed/b9EkMc79ZSU"
+title="Stranger Things Trailer"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen>
+</iframe>
 
 </div>
 
